@@ -1,0 +1,67 @@
+.footer {
+    margin-top: auto;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 8px;
+
+        p {
+            text-transform: uppercase;
+            color: $light;
+            font-size: 12px;
+        }
+    }
+
+    &-form {
+        width: 260px;
+
+        p {
+            color: $grey;
+            font-size: 8px;
+            text-transform: uppercase;
+            line-height: 10px;
+        }
+
+        &__email {
+            margin: 10px 0;
+
+            input {
+                width: 100%;
+                background: #1e1e1e;
+                height: 40px;
+                padding-left: 18px;
+                display: block;
+                font-style: 12px;
+                font-weight: 500;
+                color: $grey;
+
+            }
+        }
+
+        &__button {
+            @include button;
+            width: 100%;
+
+            span {
+                font-style: 15px;
+                font-weight: 500;
+
+                svg {
+                    width: 16px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+}
