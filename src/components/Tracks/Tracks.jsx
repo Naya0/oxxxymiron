@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -11,7 +11,7 @@ import { TRACKS } from '../utils/constants';
 
 
 const Tracks = () => {
-    const [audio] = useState(new Audio());
+    // const [audio] = useState(new Audio());
     const [playing, setPlaying] = useState(false);
     const [currentTrack, setCurrentTrack] = useState(null);
 

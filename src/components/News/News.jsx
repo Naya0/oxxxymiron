@@ -18,7 +18,7 @@ const News = () => {
 
     const sliderRef = useRef();
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     const handleButtonClick = useCallback(
         (type) => {
