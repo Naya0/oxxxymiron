@@ -11,7 +11,6 @@ import { TRACKS } from '../utils/constants';
 
 
 const Tracks = () => {
-    // const [audio] = useState(new Audio());
     const [playing, setPlaying] = useState(false);
     const [currentTrack, setCurrentTrack] = useState(null);
 
@@ -19,24 +18,7 @@ const Tracks = () => {
         setPlaying(prev => !prev);
         setCurrentTrack(track);
 
-        // setPlaying((prev) => {
-        //     const isPlaying = track.sys.id === currentTrack?.sys?.id ? !prev : true;
-
-        //     audio.src = track.link.url;
-        //     !isPlaying ? audio.pause() : audio.play();
-
-        //     return isPlaying;
-        // });
-        // setCurrentTrack(track);
-
-
     };
-
-    // useEffect(() => {
-    //     return () => {
-    //       audio.pause();
-    //     };
-    //   }, [audio]);
 
 
     return (
